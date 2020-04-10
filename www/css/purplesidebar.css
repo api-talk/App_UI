@@ -40,6 +40,40 @@ Cutomize css starts
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
+
+ @font-face {
+  font-family: vazirm;
+  src: url('font/Vazir-Medium-FD-WOL.eot');
+  src: url('font/Vazir-Medium-FD-WOL.eot?#iefix') format('embedded-opentype'),
+       url('font/Vazir-Medium-FD-WOL.woff') format('woff'),
+       url('font/Vazir-Medium-FD-WOL.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url('font/Vazir-FD-WOL.eot');
+  src: url('font/Vazir-FD-WOL.eot?#iefix') format('embedded-opentype'),
+       url('font/Vazir-FD-WOL.woff') format('woff'),
+       url('font/Vazir-FD-WOL.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: vazirl;
+  src: url('font/Vazir-Light-FD-WOL.eot');
+  src: url('font/Vazir-Light-FD-WOL.eot?#iefix') format('embedded-opentype'),
+       url('font/Vazir-Light-FD-WOL.woff') format('woff'),
+       url('font/Vazir-Light-FD-WOL.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+
+
+
 :root {
   --blue: #7979ff;
   --indigo: #6610f2;
@@ -67,7 +101,7 @@ Cutomize css starts
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "vazir",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -96,7 +130,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:"vazir", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -225,7 +259,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "vazir";
   font-size: 1em;
 }
 
@@ -269,6 +303,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  float: right;
 }
 
 button {
@@ -397,7 +432,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "vazir";
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
@@ -572,7 +607,7 @@ pre {
 }
 
 pre code {
-  font-size: inherit;
+  font-size: "vazir";
   color: inherit;
   word-break: normal;
 }
@@ -5358,7 +5393,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "vazir", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5471,7 +5506,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "vazir", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7074,6 +7109,7 @@ button.bg-dark:focus {
 
 .mb-0,
 .my-0 {
+  text-align: center;
   margin-bottom: 0 !important;
 }
 
@@ -8371,7 +8407,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "vazir", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-justify {

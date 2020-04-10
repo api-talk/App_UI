@@ -182,7 +182,7 @@
                                     <div class="row ">
                                         <div class="col-lg-12 col-md-12 text-center">
                                             <br>
-                                            <a id="Url"></a>
+                                            <p id="Url"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +295,10 @@
         document.getElementById("Name").innerHTML = jsonResponse.Name;
         document.getElementById("year").innerHTML = jsonResponse.year;
         document.getElementById("Description").innerHTML = jsonResponse.Description;
-        document.getElementById("Url").innerHTML = jsonResponse.Url;
+        var str = "مشاهده ی تصویر"
+        var result = str.link(jsonResponse.Url);
+
+        document.getElementById("Url").innerHTML = result;
             } // success case
 
       xhr.open (oFormElement.method, oFormElement.action, true);
