@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "ApiTalk",
+  "short_name": "ApiTalk",
+  "version": "com.phonegap.helloworld",
+  "description": "toolkit App",
+  "author": "Ayt",
+  "icons": [],
+  "start_url": "index.html"
+}

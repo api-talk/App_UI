@@ -7,6 +7,7 @@
     <author email="thaiostream@gmail.com" href="http://tmayt.ir">
         Ayt
     </author>
+    <access origin="http://apitalk.tmayt.ir/Hubble/" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
@@ -22,7 +23,6 @@
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.3.3" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.5" />
     <platform name="android">
-        <access origin="http://apitalk.tmayt.ir/Hubble/" />
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
