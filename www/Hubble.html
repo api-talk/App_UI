@@ -302,7 +302,6 @@
             } // success case
 
       xhr.open (oFormElement.method, oFormElement.action, true);
-      xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
       xhr.send (new FormData (oFormElement));
       return false;
     }
