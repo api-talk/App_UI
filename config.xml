@@ -7,7 +7,6 @@
     <author email="thaiostream@gmail.com" href="http://tmayt.ir">
         Ayt
     </author>
-    <access origin="http://apitalk.tmayt.ir/Hubble/" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
