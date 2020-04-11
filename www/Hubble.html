@@ -300,9 +300,9 @@
 
         document.getElementById("Url").innerHTML = result;
             } // success case
-        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 
       xhr.open (oFormElement.method, oFormElement.action, true);
+      xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
       xhr.send (new FormData (oFormElement));
       return false;
     }
